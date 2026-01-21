@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balorath - Support</title>
+    <meta name="description" content="Support and FAQ for Balorath, the free gym workout tracker for iOS.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --bg: #0f0f0f;
+            --bg-card: #1a1a1a;
+            --bg-card-hover: #222;
+            --text: #f5f5f5;
+            --text-secondary: #a1a1aa;
+            --border: #2a2a2a;
+            --success: #22c55e;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px;
+        }
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 36px;
+        }
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+        /* Section */
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title span {
+            font-size: 1.25rem;
+        }
+        /* FAQ */
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 12px;
+            transition: background 0.2s;
+        }
+        .faq-item:hover {
+            background: var(--bg-card-hover);
+        }
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+        .faq-answer {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        /* Contact Card */
+        .contact-card {
+            background: linear-gradient(135deg, var(--bg-card), #1f1f2e);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+        }
+        .contact-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+        .contact-card p {
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        .email-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .email-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        /* Features List */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+        .feature-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .feature-icon {
+            font-size: 1.25rem;
+        }
+        .feature-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid var(--border);
+            margin-top: 48px;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        /* Badge */
+        .badge {
+            display: inline-block;
+            background: var(--success);
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-left: 8px;
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 32px 16px;
+            }
+            
+            .header h1 {
+                font-size: 1.75rem;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="app-icon">🏋️</div>
+            <h1>Balorath</h1>
+            <p>Free Gym Workout Tracker</p>
+        </header>
+        <!-- Features -->
+        <section class="section">
+            <h2 class="section-title">
+                <span>✨</span> What's Included <span class="badge">100% Free</span>
+            </h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">📊</span>
+                    <span class="feature-text">Complete workout tracking</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🔢</span>
+                    <span class="feature-text">Barbell plate calculator</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⚙️</span>
+                    <span class="feature-text">Gym equipment settings</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">❤️</span>
+                    <span class="feature-text">Apple Health sync</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📝</span>
+                    <span class="feature-text">Workout templates</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🏆</span>
+                    <span class="feature-text">Personal records</span>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <section class="section">
+            <h2 class="section-title">
+                <span>❓</span> Frequently Asked Questions
+            </h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Is Balorath really free?</div>
+                <div class="faq-answer">Yes! There are no subscriptions, no premium tiers, and no ads. Every feature is available from day one.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Where is my data stored?</div>
+                <div class="faq-answer">All your workout data is stored locally on your device. If you enable iCloud sync, your data syncs across your Apple devices. We don't have access to your data.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How do I sync with Apple Health?</div>
+                <div class="faq-answer">When you finish your first workout, you'll be prompted to enable Apple Health integration. You can also enable this anytime from Settings → Apple Health.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I create my own exercises?</div>
+                <div class="faq-answer">Absolutely! Go to the Exercises tab and tap the + button to add custom exercises with your preferred settings.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How do I customize my gym's equipment?</div>
+                <div class="faq-answer">Go to Profile → Gym Settings. You can set your barbell weights, available plates, and dumbbell/machine increments to match your gym exactly.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">I accidentally deleted a workout. Can I recover it?</div>
+                <div class="faq-answer">Unfortunately, deleted workouts cannot be recovered. If you have iCloud sync enabled, your data exists on your other devices until they sync.</div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section class="section">
+            <h2 class="section-title">
+                <span>💬</span> Need Help?
+            </h2>
+            <div class="contact-card">
+                <h3>Get in Touch</h3>
+                <p>Have a question, found a bug, or want to suggest a feature?<br>We'd love to hear from you.</p>
+                <a href="mailto:support@balorath.com" class="email-btn">
+                    ✉️ Email Support
+                </a>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Balorath. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="privacy.html">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
