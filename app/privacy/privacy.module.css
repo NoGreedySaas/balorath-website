@@ -1,0 +1,119 @@
+.page {
+    min-height: 100vh;
+    background: var(--bg-light);
+}
+
+.main {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 24px 80px;
+}
+
+/* Page Header */
+.pageHeader {
+    text-align: center;
+    padding: 40px 0 60px;
+}
+
+.pageHeader h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.lastUpdated {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* Highlight Box */
+.highlightBox {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 32px;
+    margin-bottom: 48px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlightBox p {
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Content */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contentSection {
+    margin-bottom: 40px;
+}
+
+.contentSection h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.contentSection p {
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.contentSection p strong {
+    color: var(--text-primary);
+}
+
+.contentSection ul {
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    padding-left: 24px;
+    line-height: 1.8;
+}
+
+.contentSection li {
+    margin-bottom: 8px;
+}
+
+.contentSection li strong {
+    color: var(--text-primary);
+}
+
+.contentSection a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.contentSection a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pageHeader h1 {
+        font-size: 36px;
+    }
+
+    .highlightBox {
+        padding: 20px 24px;
+    }
+
+    .highlightBox p {
+        font-size: 1rem;
+    }
+
+    .contentSection h2 {
+        font-size: 1.25rem;
+    }
+}
